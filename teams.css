@@ -1,0 +1,139 @@
+#top-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.counter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  margin-top: 20px;
+}
+
+.top-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.counter-body {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px var(--green);
+}
+
+.count {
+  background-color: #000015;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--green);
+  padding: 10px;
+}
+
+.count p:first-child {
+  color: #16ff00;
+}
+
+.top-section-right img {
+  min-width: 300px;
+  border-radius: 10px;
+}
+
+#team-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper img {
+  min-width: 400px;
+  border-radius: 10px;
+}
+
+.img-wrapper h1 {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  bottom: 0;
+}
+
+#donate-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px 80px;
+  place-items: center;
+}
+
+.donate-sec-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.donate-sec-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 50px;
+}
+
+.donate-sec-people {
+  background-image: linear-gradient(132deg, #c17edb 0%, #1662a0 100%);
+
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 50px;
+  text-wrap: nowrap;
+  min-width: 220px;
+  max-width: fit-content;
+}
+
+.donate-sec-people img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+  #top-section {
+    flex-direction: column-reverse;
+  }
+
+  #team-images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img-wrapper img {
+    min-width: 300px;
+  }
+
+  .donate-sec-content {
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .donate-sec-content {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
