@@ -3,6 +3,7 @@ Kullanılan teknolojiler
 * Html
 * Css
 * Js
+
 Proje kapsamlı, responsive ve çok sayfalı olarak tasarlandı
 
 Projenin bitmiş halinin gif'i aşağıda verilmiştir.
